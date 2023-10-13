@@ -34,8 +34,8 @@ export const Navbar = () => {
     }, [])
 
     return (
-        <nav className="fixed top-0 left-0 right-0 z-10 bg-[#121212] md:bg-opacity-90">
-            <div className="flex flex-wrap items-center justify-between mx-auto py-4 px-8">
+        <nav className="fixed top-0 left-0 right-0 z-10 bg-[#121212] md:bg-opacity-90 border-b border-[#33353f]">
+            <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto py-4 px-8">
                 <Link href={'/'} className="text-3xl md:text-5xl text-white font-semibold">
                     Logo
                 </Link>

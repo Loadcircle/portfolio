@@ -7,11 +7,13 @@ import { ArrowDownTrayIcon } from "@heroicons/react/20/solid";
 export const HeroSection = () => {
     
     return (
-        <section>
+        <section className="lg:py-16">
             <div className="grid grid-cols-1 lg:grid-cols-12">
                 <div className="col-span-7 place-self-center text-center sm:text-left">
                     <h1 className='text-white mb-4 text-5xl lg:text-6xl font-extrabold'>
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-sky-500 to-blue-400">Hello, I'm{""} </span> 
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-500 via-sky-500 to-primary-400">
+                            Hello, I'm{""} 
+                        </span> 
                         <br />
                         <TypeAnimation
                             sequence={[
@@ -35,7 +37,7 @@ export const HeroSection = () => {
                         Animi laboriosam nemo eaque nisi, numquam sint earum 
                     </p>
                     <div>
-                        <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-r from-blue-500 via-sky-500 to-blue-400">Hire Me</button>
+                        <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-r from-primary-500 via-sky-500 to-primary-400">Hire Me</button>
                         <button className="group px-6 py-3 w-full sm:w-fit rounded-full bg-transparent hover:bg-slate-200 text-white hover:text-black border border-white mt-3">
                             <ArrowDownTrayIcon className="w-6 h-6 text-white inline-block mr-2 -mt-1 group-hover:text-black"/>
                             Download CV
