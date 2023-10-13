@@ -32,10 +32,8 @@ export const ContactSections = () => {
         };
 
         const request = await fetch(endpoint, options);
-        console.log({request})
         const response = await request.json();
-        console.log({response})
-        if(response.success){
+        if(response.id){
             console.log('Message sent')
             setEmailSubmited(true);
         }
