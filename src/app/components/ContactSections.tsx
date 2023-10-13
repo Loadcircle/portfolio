@@ -118,7 +118,7 @@ export const ContactSections = () => {
                     emailSubmited && (
                         <p>
                             Email sent successfully! 
-                            I'll get back to you as soon as possible. 
+                            I&apos;ll get back to you as soon as possible. 
                             Thank you for your time. 
                             <br />
                             <br />
