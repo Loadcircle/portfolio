@@ -1,6 +1,6 @@
 "use client"
 import Image from "next/image"
-import aboutImage from "../../../public/images/about-image.png"
+import aboutImage from "../../../public/images/about-image.jpg"
 import { useState } from "react"
 import { TabButton } from "./TabButton"
 
