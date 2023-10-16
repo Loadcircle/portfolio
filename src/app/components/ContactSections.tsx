@@ -43,17 +43,16 @@ export const ContactSections = () => {
     
 
   return (
-    <section className='grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative'>
+    <section id='contact' className='grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative'>
         <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-400 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
         <div className='z-10'>
             <h5 className='text-xl font-bold text-white my-2'>
-                Contactame
+                Contact me
             </h5>
-            <p className='text-[#ADB7BE] mb-4 max-w-md'>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                Maiores consequatur rem, qui consequuntur est velit optio 
-                quidem itaque eos aliquam odio dicta accusamus, soluta natus, 
-                fugiat impedit ex architecto porro?
+            <p className='text-base mb-4 max-w-md'>
+                I firmly believe that any idea can be transformed into reality. 
+                I approach each project with the mindset that every challenge has a solution. 
+                If you can envision it, I am confident in my ability to bring it to life.
             </p>
             <div className='socials flex flex-row gap-2'>
                 <Link href="https://github.com/Loadcircle" target='_blank'>
@@ -106,7 +105,7 @@ export const ContactSections = () => {
                 </div>
 
                 <button
-                    className='mt-2 w-full text-white font-medium py-2.5 px-5 rounded-lg bg-gradient-to-r from-blue-500 via-sky-500 to-blue-400'>
+                    className='mt-2 w-full text-white font-medium py-2.5 px-5 rounded-lg default-gradient'>
                     {
                         emailSubmited ? 
                         "Email sent successfully!" :
@@ -122,7 +121,7 @@ export const ContactSections = () => {
                             Thank you for your time. 
                             <br />
                             <br />
-                            <span className='text-sm text-[#ADB7BE]'>
+                            <span className='text-sm text-base'>
                                 - Jesús Milano
                             </span>
                         </p>

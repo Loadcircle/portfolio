@@ -45,10 +45,10 @@ export const AboutSection = () => {
                 <div className="mt-5 md:mt-0">
                     <h2 className="text-4xl font-bold text-white mb-4">About me</h2>
                     <p className="text-base lg:text-lg">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                        Officiis placeat dolor distinctio eius, dolorum est similique, 
-                        aliquid provident quod error ea pariatur molestiae, 
-                        vero aspernatur? Quaerat esse iste repudiandae eum?
+                        I am an experienced self-taught software developer with over 6 years of professional experience. 
+                        <br />
+                        I have a particular affinity for frontend development, with a strong focus on JavaScript with ReactJs and CSS. 
+                        I have extensive experience working with major JavaScript libraries and frameworks
                     </p>
                     <div className="flex flex-row mt-8">
                         <TabButton active={tab === "skills"} selectTab={()=>handleTabChange("skills")}>

@@ -18,7 +18,7 @@ const config: Config = {
         ...colors,
         primary: colors.blue,
         secondary: colors.indigo,
-        'custom-color': '#ADB7BE'
+        'base': '#ADB7BE'
       }
     },
   },
