@@ -2,10 +2,11 @@ import React from 'react'
 import { projectTypes } from '../helpers/types'
 import { CodeBracketIcon, EyeIcon } from '@heroicons/react/24/solid'
 import Link from "next/link"
+import styles from './styles/ProjectSection.module.css';
 
 export const ProjectCard = ({title, description, imgUrl, gitUrl, previewUrl}:projectTypes) => {
   return (
-    <div className='light-border-card rounded-xl'>        
+    <div className={`${styles['light-border-card']} rounded-xl`}>
         <div 
             className='h-52 md:h-72 relative group bg-cover bg-center'
             style={{
