@@ -5,7 +5,7 @@ import helloAnimation from "../../../public/lotties/hello-lottie.json"
 import { ArrowDownTrayIcon } from "@heroicons/react/20/solid";
 
 export const HeroSection = () => {
-    
+     
     return (
         <section className="lg:py-16">
             <div className="grid grid-cols-1 lg:grid-cols-12">
