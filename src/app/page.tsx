@@ -13,7 +13,6 @@ export default function Home() {
       <Navbar/>
       <main>
         <div className="container mt-16 lg:mt-6 mx-auto py-4 px-12">
-          <AnimatedCircle/>
           <HeroSection/>
           <AchievementsSection/>
           <AboutSection/>
@@ -22,6 +21,7 @@ export default function Home() {
         </div>
       </main>
       <Footer/>
+      <AnimatedCircle/>
     </>
   )
 }

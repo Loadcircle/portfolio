@@ -16,5 +16,5 @@ export const AnimatedCircleHandle = forwardRef((props, ref) => {
       };
     }, []);
     
-    return <div className="rounded-full w-5 h-5 bg-white" ref={el}></div>;
+    return <div className="rounded-full w-5 h-5 bg-white pointer-events-none z-100" ref={el}></div>;
   });

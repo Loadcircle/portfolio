@@ -22,7 +22,8 @@ html{
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: #121212
+  background: #121212;
+  overflow-x: hidden
 }
 
 .default-gradient{

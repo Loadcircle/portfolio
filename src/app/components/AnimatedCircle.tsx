@@ -27,7 +27,7 @@ export const AnimatedCircle = () => {
     }, []);
       
     return (
-        <div className='absolute -top-2 -left-2'>
+        <div className='absolute -top-2 -left-2 z-30'>
             <AnimatedCircleHandle ref={circleRef}/>
         </div>
     )
