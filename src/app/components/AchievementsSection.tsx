@@ -27,7 +27,7 @@ export const AchievementsSection = () => {
             {ACHIEVEMENTS_DATA.map((achievement, index) => (
                 <div key={index} className="flex flex-col items-center justify-center mx-4">
                     <h2 className="text-white text-4xl font-bold">{achievement.value}</h2>
-                    <p className="text-[#ADB7BE] text-base">{achievement.metric}</p>
+                    <p className="text-base text-base">{achievement.metric}</p>
                 </div>
             ))}
         </div>
