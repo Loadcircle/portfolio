@@ -2,6 +2,7 @@
 import React, { useEffect, useRef } from 'react'
 import { AnimatedCircleHandle } from './AnimatedCircleHandle'
 import { isAnchorOrButton } from '../helpers/helpers';
+const hasPointer = window.matchMedia('(pointer: fine)').matches;
 
 type CircleRefType = {
     moveTo: (x: number, y: number) => void;
@@ -12,21 +13,19 @@ export const AnimatedCircle = () => {
     const circleRef = useRef<CircleRefType>(null);
          
     useEffect(() => {    
+        if(!hasPointer) return;
         //set to center screen
         const { innerWidth, innerHeight } = window;
         circleRef.current?.moveTo(innerWidth / 2, innerHeight / 2);
         
         const onMove = ({ pageX, pageY }: PointerEvent) => {      
             circleRef.current?.moveTo(pageX, pageY);
-            const elementUnderPointer = document.elementFromPoint(pageX, pageY);
-            
+            const elementUnderPointer = document.elementFromPoint(pageX, pageY);            
             if(isAnchorOrButton(elementUnderPointer)){
                 circleRef.current?.scaleTo(2);
             }else{
                 circleRef.current?.scaleTo(1);
-            }
-            //check if elemente a anchor or button
-            
+            }            
         };
         
         window.addEventListener("pointermove", onMove);
@@ -38,8 +37,15 @@ export const AnimatedCircle = () => {
     }, []);
       
     return (
-        <div className='absolute -top-2 -left-2 z-30'>
-            <AnimatedCircleHandle ref={circleRef}/>
-        </div>
+        <>
+            {
+                hasPointer ? 
+                (<div className='absolute -top-2 -left-2 z-30'>
+                    <AnimatedCircleHandle ref={circleRef}/>        
+                </div>)
+                : 
+                null
+            }        
+        </>
     )
 }
