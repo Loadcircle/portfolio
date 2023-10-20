@@ -11,16 +11,18 @@ export default function Home() {
   return (
     <>
       <Navbar/>
-      <main>
-        <div className="container mt-16 lg:mt-6 mx-auto py-4 px-12">
-          <HeroSection/>
-          <AchievementsSection/>
-          <AboutSection/>
-          <ProjectsSection/>
-          <ContactSections/>
-        </div>
-      </main>
-      <Footer/>
+      <div className='max-h-screen overflow-y-auto overflow-x-hidden'>        
+        <main>
+          <div className="container mt-16 lg:mt-6 mx-auto py-4 px-12">
+            <HeroSection/>
+            <AchievementsSection/>
+            <AboutSection/>
+            <ProjectsSection/>
+            <ContactSections/>
+          </div>
+        </main>
+        <Footer/>
+      </div>
       <AnimatedCircle/>
     </>
   )

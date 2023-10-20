@@ -12,6 +12,9 @@ export const AnimatedCircleHandle = forwardRef((props, ref) => {
       return {
         moveTo(x:number, y:number) {
           gsap.to(el.current, { x, y, delay});
+        },
+        scaleTo(val:number){
+          gsap.to(el.current, {scale: val})
         }
       };
     }, []);

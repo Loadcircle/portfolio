@@ -23,7 +23,7 @@ html{
 body {
   color: rgb(var(--foreground-rgb));
   background: #121212;
-  overflow-x: hidden
+  overflow: hidden;
 }
 
 .default-gradient{
